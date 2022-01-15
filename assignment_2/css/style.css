@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Spline Sans', sans-serif;
+}
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Spline+Sans:wght@300&display=swap');
+/* nav area */
+ul{
+    display: flex;
+    justify-content: flex-end;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    /* background-color: #4251f5; */
+    margin: 10px;
+    padding:6px 8px;
+    color: black;
+    border: none;
+}
+/* hover  a */
+a:hover{
+    background-color: #4251f5;
+    color: white;
+    border-radius: 4px;
+    transition: 0.2s
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 97px;
+    margin-right: 94px;
+}
+
+
+/* camara and text */
+.CAmara_and_text{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 93px;
+    margin-left: 96px;
+}
+.img_camara{
+    margin-left: 62px;
+}
+
+.text_button{
+    text-align: justify;
+}
+.bold{
+    font-weight: 700;
+    font-size: 55px;
+}
+.line_hight{
+    line-height:1.5;
+    font-size: 1.5em;
+}
+.all_kind_of_button{
+    margin-top: 27px;
+    padding: 8px 18px;
+    background-color: #4251f5;
+    color: white;
+    border-radius: 20px;
+    border: none;
+
+}
+/* hover */
+.all_kind_of_button:hover{
+    background-color: #404596;
+    transition: 0.3s;
+}
+.fa-arrow-right{
+    padding-left: 8px;
+}
+/* some svg logo */
+
+
+.some_logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 81px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    
+
+}
+.some_logos img{
+    padding-left: 75px;
+    padding-top: 25px;
+    padding-bottom: 21px;
+}
+
+
+/* container */
+.aling_center{
+    text-align: center;
+    margin-top: 115px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    grid-row-gap: 35px;
+    /* margin-left: 167px; */
+    margin-top: 70px;
+    justify-content: center;
+    justify-items: center;
+    padding-left: 151px;
+    margin-right: 87px;
+}
+    
+    
+.gray{
+    color: lightslategray;
+    padding-top: 5px;
+}
+.fa-star{
+    color: rgb(255, 208, 0);
+}
+.block{
+    display: flex;
+    align-items: center;
+}
+h5{
+    padding-left: 8px;
+}
+.items{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: 2px 1px 5px 0px grey;
+}
+/* hover items */
+.items:hover{
+    background-color: rgb(240, 240, 240);
+    transition: 0.3s;
+}
+
+.aling{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 107px;
+}
+.left{
+    background-color: white;
+    color: #5054ed;
+    margin-top: 26px;
+}
+
+/* my alon work */
+.My_alon_work{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 87px;
+}
+
+input{
+    padding: 3px 14px;
+    margin: 8px 2px;
+    font-size: 16px;
+}
+.main_input{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-column-gap:10px ;
+    width: 100%;
+}
+.left-side img{
+    width: 400px;
+}
+.all{
+    background-color: #5054ed;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.all:hover{
+    background-color: #404596;
+    transition: 0.2s;
+}
+
+
+
+
+
+/* footer */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 115px;
+    background: #585454;
+    color: white;
+    padding-top: 51px;
+    padding-bottom: 99px;
+    line-height: 1.5;
+}
+
+footer h5{
+    margin-left: 72px;
+}
+footer p{
+    padding-left: 18px;
+}
+.dis{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    justify-content: space-evenly;
+    margin-top: 18px;
+    font-size: 30px;
+    
+    
+}
+/*media*/
+@media (max-width:670px) {
+    nav .left_side{
+        display: none;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        justify-content: center;
+    }
+    .My_alon_work {
+        flex-direction: column;
+    }
+    .main_input{
+        justify-content: center;
+    }
+    .items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 64px;
+    }
+    .some_logos{
+        display: grid;
+        grid-template-columns: repeat(1fr);
+    }
+    .centers{
+        padding-left: 66px;
+        
+    }
+    .left-side{
+        
+        margin-top: 50px;
+
+    }
+    .left-side img{
+        width: 315px;
+        margin-left: 22px;
+    }
+    footer{
+        margin-top: 10px;
+    }
+    .footer{
+        padding-bottom: 141px;
+        padding-top: 18px;
+    }
+    .CAmara_and_text{
+        display: flex;
+        flex-direction: column;
+        max-width: 360px;
+    }
+    .img_camara{
+        margin-left: -41px;
+        margin-top: 57px;
+    }
+    .img_camara img{
+        width: 250px;
+    }
+    .text_button{
+        max-width: 265px;
+    }
+    .line_hight{
+        margin-right: 28px;
+    }
+    
+}
+
